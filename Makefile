@@ -6,13 +6,9 @@ NAMESPACE := nginx-ingress
 CHART_NAME := ingress-nginx/ingress-nginx
 CHART_VERSION ?= 3.7.0
 
-DEV_CLUSTER ?= p4-development
-DEV_PROJECT ?= planet-4-151612
-DEV_ZONE ?= us-central1-a
-
-PROD_CLUSTER ?= planet4-production
-PROD_PROJECT ?= planet4-production
-PROD_ZONE ?= us-central1-a
+DEV_CLUSTER ?= testrc
+DEV_PROJECT ?= jendevops1
+DEV_ZONE ?= australia-southeast1-c
 
 .DEFAULT_TARGET: status
 
