@@ -54,4 +54,4 @@ destroy:
 	helm3 uninstall $(RELEASE)
 
 history:
-	helm3 history $(RELEASE) --max=5
+	helm3 history $(RELEASE) -n $(NAMESPACE) --max=5
